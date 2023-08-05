@@ -1,0 +1,15 @@
+{
+    "status": "Success",
+    "message": null,
+    "data": {
+        "user": {
+            "name": "Marcio",
+            "manager_id": 3,
+            "email": "marcio@gmail.com",
+            "updated_at": "2022-11-24T09:11:45.000000Z",
+            "created_at": "2022-11-24T09:11:45.000000Z",
+            "id": 3
+        },
+        "token": "12|oMh3r1WmJGXsbqJp3H2Fgs0ZT9ACPlU3khs1AtzW"
+    }
+}
