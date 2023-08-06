@@ -16,6 +16,7 @@ services:
         networks:
             - erp-network
 
+
     # nginx
     vendas-php:
         image: nginx:alpine
