@@ -12,9 +12,9 @@ services:
         working_dir: /var/www/
         volumes:
             - ./:/var/www
-            - ~/.ssh/id_rsa:/home/root/.ssh/id_rsa
-            - ~/.ssh/id_rsa.pub:/home/root/.ssh/id_rsa.pub
-            - ~/.ssh/known_hosts:/home/root/.ssh/known_hosts
+            - ~/.ssh/id_rsa:/home/usuario/.ssh/id_rsa
+            - ~/.ssh/id_rsa.pub:/home/usuario/.ssh/id_rsa.pub
+            - ~/.ssh/known_hosts:/home/usuario/.ssh/known_hosts
         networks:
             - erp-network
 
@@ -30,7 +30,6 @@ services:
         volumes:
             - ./:/var/www
             - .docker/nginx/:/etc/nginx/conf.d/
-        
         networks:
             - erp-network
 
