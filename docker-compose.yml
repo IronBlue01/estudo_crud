@@ -10,14 +10,17 @@ services:
         working_dir: /var/www/
         volumes:
             - ./:/var/www
-            - ~/.ssh/id_rsa:/home/infra/.ssh/id_rsa
-            - ~/.ssh/id_rsa.pub:/home/infra/.ssh/id_rsa.pub
-            - ~/.ssh/known_hosts:/home/infra/.ssh/known_hosts
+            - ~/.ssh/id_rsa:/home/.ssh/id_rsa
+            - ~/.ssh/id_rsa.pub:/home/.ssh/id_rsa.pub
+            - ~/.ssh/known_hosts:/home/.ssh/known_hosts
         networks:
             - erp-network
 
     # nginx
     vendas-php:
+        build:
+            context: .docker/nginx
+            dockerfile: Dockerfile
         image: nginx:alpine
         restart: unless-stopped
         ports:

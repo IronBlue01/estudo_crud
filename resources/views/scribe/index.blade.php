@@ -116,7 +116,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: August 5, 2023</li>
+        <li>Last updated: August 6, 2023</li>
     </ul>
 </div>
 
@@ -967,14 +967,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/contatos/non" \
+    --get "http://localhost/api/contatos/doloribus" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/contatos/non"
+    "http://localhost/api/contatos/doloribus"
 );
 
 const headers = {
@@ -1083,10 +1083,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-contatos--id-"
-               value="non"
+               value="doloribus"
                data-component="url">
     <br>
-<p>The ID of the contato. Example: <code>non</code></p>
+<p>The ID of the contato. Example: <code>doloribus</code></p>
             </div>
                     </form>
 
@@ -1103,14 +1103,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/contatos/dicta" \
+    "http://localhost/api/contatos/commodi" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/contatos/dicta"
+    "http://localhost/api/contatos/commodi"
 );
 
 const headers = {
@@ -1207,10 +1207,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-contatos--id-"
-               value="dicta"
+               value="commodi"
                data-component="url">
     <br>
-<p>The ID of the contato. Example: <code>dicta</code></p>
+<p>The ID of the contato. Example: <code>commodi</code></p>
             </div>
                     </form>
 
@@ -1227,14 +1227,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/contatos/sunt" \
+    "http://localhost/api/contatos/molestiae" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/contatos/sunt"
+    "http://localhost/api/contatos/molestiae"
 );
 
 const headers = {
@@ -1327,10 +1327,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-contatos--id-"
-               value="sunt"
+               value="molestiae"
                data-component="url">
     <br>
-<p>The ID of the contato. Example: <code>sunt</code></p>
+<p>The ID of the contato. Example: <code>molestiae</code></p>
             </div>
                     </form>
 
