@@ -15,7 +15,7 @@ services:
             - ~/.ssh/known_hosts:/home/infra/.ssh/known_hosts
         networks:
             - erp-network
-            
+
     # nginx
     vendas-php:
         image: nginx:alpine
@@ -44,6 +44,7 @@ services:
             - .docker/postgres/scripts:/etc/postgresql/scripts
         networks:
             - erp-network
+
 
 networks:
     erp-network:
