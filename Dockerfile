@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     unzip \
     git \
+    git-crypt \
     curl \
     wget \
     libaio1 \
@@ -32,8 +33,9 @@ RUN apt-get autoremove --yes
 RUN rm -rf /var/lib/{apt,dpkg,cache,log}
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN git config --system --add safe.directory '*'
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo pdo_pgsql pgsql mbstring exif pcntl bcmath gd sockets
