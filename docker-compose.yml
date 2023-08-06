@@ -15,8 +15,7 @@ services:
             - ~/.ssh/known_hosts:/home/infra/.ssh/known_hosts
         networks:
             - erp-network
-
-
+            
     # nginx
     vendas-php:
         image: nginx:alpine
