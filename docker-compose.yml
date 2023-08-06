@@ -12,9 +12,9 @@ services:
         working_dir: /var/www/
         volumes:
             - ./:/var/www
-            - ~/.ssh/id_rsa:/home/.ssh/id_rsa
-            - ~/.ssh/id_rsa.pub:/home/.ssh/id_rsa.pub
-            - ~/.ssh/known_hosts:/home/.ssh/known_hosts
+            - ~/.ssh/id_rsa:/home/root/.ssh/id_rsa
+            - ~/.ssh/id_rsa.pub:/home/root/.ssh/id_rsa.pub
+            - ~/.ssh/known_hosts:/home/root/.ssh/known_hosts
         networks:
             - erp-network
 
